@@ -3,17 +3,12 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-  * {
-    @apply border-border;
+  html {
+    scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-  }
-  
-  html {
-    scroll-behavior: smooth;
   }
 }
 
@@ -39,7 +34,7 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-card hover:scale-102;
+    @apply transition-all duration-300 hover:shadow-card hover:scale-105;
   }
 }
 
